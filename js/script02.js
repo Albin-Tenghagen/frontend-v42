@@ -46,8 +46,19 @@ tonåringsKoll()
 
 //övning 9
 // Max av Tre Tal (Svår) Uppgift: Be användaren ange tre tal. Använd jämförelseoperatorer för att bestämma vilket tal som är störst. Skriv ut det största talet.
-let num1 = parseFloat(prompt('välj nummer 1'));
-let num2 = parseFloat(prompt('välj nummer 2'));
-let num3 = parseFloat(prompt('välj nummer 3'));
+function störstTal() {
 
-console.log(num1, num2, num3 )
+    let num1 = parseFloat(prompt('välj nummer 1'));
+    let num2 = parseFloat(prompt('välj nummer 2'));
+    let num3 = parseFloat(prompt('välj nummer 3'));
+    
+    let largest = (num1 > num2) ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
+    console.log(`Den största siffran är: ${largest}`)
+
+
+    console.log( num1 >= num2, num3)
+    console.log(num1, num2, num3);
+}
+störstTal()
+// let biggestNumber = Math.max(num1, num2, num3);
+// console.log(biggestNumber);
