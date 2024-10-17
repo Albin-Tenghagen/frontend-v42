@@ -1,0 +1,52 @@
+What is a Regular Expression?
+
+A regular expression (or regex) is a sequence of characters that forms a search pattern. It's used to describe and match text patterns in strings. Regular expressions are powerful tools for string manipulation, such as searching, replacing, extracting, or validating text based on specific patterns.
+Common Use Cases of Regular Expressions:
+
+    String Searching:
+        Find specific patterns in a string (e.g., words, numbers, special characters).
+        Example: Searching for all email addresses in a document.
+
+    Validation:
+        Ensure that input follows a specific format (e.g., emails, phone numbers, passwords).
+        Example: Verifying if a string is a valid email address like username@example.com.
+
+    String Replacement:
+        Replace parts of a string that match a pattern.
+        Example: Censoring profanity or replacing specific characters in a string.
+
+    Data Extraction:
+        Extract data from structured text based on a pattern.
+        Example: Extracting dates, phone numbers, or URLs from a large text.
+
+    Text Splitting:
+        Split a string into an array based on a delimiter pattern.
+        Example: Splitting a CSV (Comma-Separated Value) string into individual values using commas as delimiters.
+
+Basic Components of a Regular Expression:
+
+    Literal Characters:
+        Match specific characters (e.g., /cat/ matches the word "cat").
+
+    Character Classes:
+        Match any one of a set of characters:
+            \d: Matches any digit (0-9).
+            \w: Matches any word character (letters, digits, underscores).
+            \s: Matches any whitespace (space, tab, newline).
+            .: Matches any character except newline.
+
+    Quantifiers:
+        Define how many times a pattern can occur:
+            *: Zero or more times.
+            +: One or more times.
+            ?: Zero or one time.
+            {n}: Exactly n times.
+
+    Anchors:
+        Define the position in the string:
+            ^: Matches the start of a string.
+            $: Matches the end of a string.
+
+    Grouping and Alternation:
+        Use parentheses () to group patterns.
+        Use the pipe | for OR conditions.

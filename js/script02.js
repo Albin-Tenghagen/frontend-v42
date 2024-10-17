@@ -18,15 +18,15 @@ console.log(b / a);
 // console.log(`${storsta} är den större av dem två`)
 
 //övning 4
-let number = parseFloat(prompt('ange en siffra'));
-let remainder = (number % 2);
-console.log(remainder);
-if (remainder === 0) {
-    console.log(`${number} är jämy`)
-} else {
-    console.log(`${number} är udda`)
-}
-                //övning 5
+// let number = parseFloat(prompt('ange en siffra'));
+// let remainder = (number % 2);
+// console.log(remainder);
+// if (remainder === 0) {
+//     console.log(`${number} är jämy`)
+// } else {
+//     console.log(`${number} är udda`)
+// }
+//                 //övning 5
 /*
 let age = prompt('ange din ålder här');
 let idCheck = prompt('Har du biljett? ja eller nej');
@@ -38,7 +38,7 @@ if (age >= 17 && idCheck === 'ja') {
 }
 */
                 // övning 6 gjord
-
+                //övning 6 gjord
                 // övning 7
 //Strikt vs Lös Jämförelse (Medel) Uppgift: Deklarera variablerna let x = '10'; och let y = 10;. Jämför x och y med == och ===. Förklara skillnaden i en kommentar.
 
@@ -124,3 +124,14 @@ tonåringsKoll()
 //     console.log('Lösenordet är ogiltigt')
 // }
                 //Övning 10
+
+                //övning 11
+let chosenYear = parseFloat(prompt('ange ett årtal, så ska vi se till att det är ett skottår'));
+
+let calculation = 
+(chosenYear % 4 === 0 && chosenYear % 100 !== 0) || (chosenYear % 400 === 0)
+? `${chosenYear} är ett skottår`
+: `${chosenYear} är inte ett skottår`;
+console.log(calculation)
+
+                //övning 11
